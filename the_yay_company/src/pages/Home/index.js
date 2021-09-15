@@ -6,15 +6,17 @@ import About from "../../components/About";
 import Accoridon from "../../components/Accordion";
 import Tabs from "../../components/Tabs";
 
+import Main from "./HomeComponents";
+
 export default function index() {
   return (
-    <>
+    <Main>
       <Carousel />
       <Container>
         <About />
         <Accoridon />
         <Tabs />
       </Container>
-    </>
+    </Main>
   );
 }

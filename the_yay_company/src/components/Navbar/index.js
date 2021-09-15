@@ -37,36 +37,3 @@ export default function index() {
     </Header>
   );
 }
-
-// export default function index() {
-//   return (
-//     <Header>
-//       <Container>
-//         <Navbar expand="lg">
-//           <Link to="/">The YAY Company</Link>
-//           <Navbar.Toggle aria-controls="navbarScroll" />
-
-//           <Navbar.Collapse id="navbarScroll">
-//             <Nav className="me-auto my-4 my-lg-0" navbarScroll>
-//               <NavLink to="/" className="nav-link" exact>
-//                 <Container>Home</Container>
-//               </NavLink>
-//               <NavLink to="/news" className="nav-link">
-//                 <Container>News</Container>
-//               </NavLink>
-//               <NavLink to="/contact" className="nav-link">
-//                 <Container>Contact</Container>
-//               </NavLink>
-//             </Nav>
-//             <Container>
-//               <Form className="d-flex">
-//                 <Form.Control type="search" placeholder="Search" className="mr-2" aria-label="Search" />
-//                 <Button>Go</Button>
-//               </Form>
-//             </Container>
-//           </Navbar.Collapse>
-//         </Navbar>
-//       </Container>
-//     </Header>
-//   );
-// }
