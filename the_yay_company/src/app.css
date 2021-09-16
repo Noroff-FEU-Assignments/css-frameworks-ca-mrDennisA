@@ -5,6 +5,10 @@
   --color01: #e92569;
   --color02: #767676;
   --color03: #efefef;
+  --color04: #d1d1d1;
+  --color05: #e5e5e5;
+  --color06: #f5f5f5;
+  --color07: #c7c7c7;
 
   --font01: "Playfair Display", serif;
   --font02: "Lato", sans-serif;
@@ -31,6 +35,22 @@ body,
 }
 
 #root > .wrapper {
-  flex: 1 0 auto;
-  background: var(--color03);
+  flex: 1;
+  background: radial-gradient(closest-side, #fff, var(--color05));
+}
+
+main {
+  margin-bottom: 11rem;
+}
+
+h1 {
+  color: var(--color01);
+  font-family: var(--font01);
+  font-size: 34px;
+  margin: 2.5rem 0 0;
+}
+
+.container {
+  padding-right: var(--bs-gutter-x, 1.5rem);
+  padding-left: var(--bs-gutter-x, 1.5rem);
 }

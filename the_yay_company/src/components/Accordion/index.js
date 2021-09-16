@@ -1,10 +1,15 @@
 import React from "react";
 
-import { Accordion, Image } from "react-bootstrap";
+import { Accordion, Image, Row, Col } from "react-bootstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
+import AccordionComponent from "./AccordionComponent";
 
 export default function index() {
   return (
-    <Accordion defaultActiveKey="0" className="d-md-none">
+    <AccordionComponent defaultActiveKey="0" className="d-md-none">
       <Accordion.Item eventKey="0">
         <Accordion.Header>First</Accordion.Header>
         <Accordion.Body>
@@ -13,6 +18,15 @@ export default function index() {
             Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
           </p>
           <Image src="./images/tab/tab-1.jpg" fluid />
+          <Row xs="auto">
+            <Col>SHARE</Col>
+            <Col>
+              <FontAwesomeIcon icon={faFacebookF} className="fa-lg" />
+            </Col>
+            <Col>
+              <FontAwesomeIcon icon={faTwitter} className="fa-lg" />
+            </Col>
+          </Row>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
@@ -23,6 +37,15 @@ export default function index() {
             Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
           </p>
           <Image src="./images/tab/tab-2.jpg" fluid />
+          <Row xs="auto">
+            <Col>SHARE</Col>
+            <Col>
+              <FontAwesomeIcon icon={faFacebookF} className="fa-lg" />
+            </Col>
+            <Col>
+              <FontAwesomeIcon icon={faTwitter} className="fa-lg" />
+            </Col>
+          </Row>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
@@ -33,8 +56,17 @@ export default function index() {
             Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
           </p>
           <Image src="./images/tab/tab-3.jpg" fluid />
+          <Row xs="auto">
+            <Col>SHARE</Col>
+            <Col>
+              <FontAwesomeIcon icon={faFacebookF} className="fa-lg" />
+            </Col>
+            <Col>
+              <FontAwesomeIcon icon={faTwitter} className="fa-lg" />
+            </Col>
+          </Row>
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
+    </AccordionComponent>
   );
 }

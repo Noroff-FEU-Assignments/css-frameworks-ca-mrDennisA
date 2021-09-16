@@ -4,10 +4,12 @@ import { Tabs, Tab, Image, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
+import Div from "./TabsContainer";
+
 export default function index() {
   return (
-    <div className="d-none d-md-block">
-      <Tabs defaultActiveKey="first" id="uncontrolled-tab-example" className="mb-3">
+    <Div className="d-none d-md-block">
+      <Tabs defaultActiveKey="first" id="uncontrolled-tab-example">
         <Tab eventKey="first" title="First">
           <Row>
             <Col sm={4}>
@@ -75,6 +77,6 @@ export default function index() {
           </Row>
         </Tab>
       </Tabs>
-    </div>
+    </Div>
   );
 }

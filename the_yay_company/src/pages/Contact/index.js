@@ -1,22 +1,25 @@
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+
+import Main from "./ContactComponents";
 
 import ContactInfo from "../../components/ContactInfo";
 import Form from "../../components/Form";
 
 export default function index() {
   return (
-    <Container>
-      <h2>Submit your details</h2>
-      <Row md={2}>
-        <Col>
+    <Main>
+      <Container>
+        <h1>Submit your details</h1>
+      </Container>
+      <Container>
+        <Row>
           <ContactInfo />
-        </Col>
-        <Col md={{ order: "first" }}>
+
           <Form />
-        </Col>
-      </Row>
-    </Container>
+        </Row>
+      </Container>
+    </Main>
   );
 }

@@ -5,9 +5,11 @@ import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
+import ColComponent from "./ContactinfoComponent";
+
 export default function index() {
   return (
-    <>
+    <ColComponent>
       <Row xs="auto">
         <Col>
           <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
@@ -35,6 +37,6 @@ export default function index() {
           <div>10000</div>
         </Col>
       </Row>
-    </>
+    </ColComponent>
   );
 }

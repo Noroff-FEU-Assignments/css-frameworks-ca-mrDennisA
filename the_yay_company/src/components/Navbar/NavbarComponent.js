@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Header = styled.header`
   height: 70px;
-
+  background: var(--color03);
   & > .container {
     height: 100%;
 
@@ -31,7 +31,7 @@ const Header = styled.header`
     font-style: italic;
     font-weight: 700;
     text-decoration: none;
-    margin-right: 48px;
+
     justify-content: space-between;
 
     &:hover {
@@ -40,6 +40,7 @@ const Header = styled.header`
 
     @media screen and (min-width: 992px) {
       color: var(--color02);
+      margin-right: 48px;
     }
   }
 
