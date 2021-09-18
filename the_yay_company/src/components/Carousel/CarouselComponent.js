@@ -16,6 +16,7 @@ const CarouselComponent = styled(Carousel)`
     width: 30px;
     border: unset;
     border-radius: 2px;
+    box-shadow: 0 3px 6px #000;
   }
 
   & a {
